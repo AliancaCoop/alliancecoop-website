@@ -1,0 +1,194 @@
+body {
+  background: #F8F8F8;
+  word-wrap: break-word;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+}
+
+
+
+.question-card {
+  padding: 15px;
+  height: 340px;
+}
+
+
+.question-card h5 {
+  height: 120px;
+}
+
+.question-card:hover {
+  background: #FFF;
+  transition: box-shadow .25s;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12), 
+              0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.question-card .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+video {
+  width: 100%;
+  height: 100vh; 
+  object-fit: cover; 
+  filter: blur(2px) grayscale(0.1) brightness(0.45) contrast(1.05)
+}
+
+.logo { 
+  margin-top: calc(50vh - 40px); 
+  display: flex;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.logo-img {
+  width: 100%;
+  padding: 10px;
+}
+
+
+@keyframes to-white-background {
+    from {background-color: transparent;}
+    to {background-color: white;}
+}
+
+@keyframes to-transparent-background {
+    from {background-color: white;}
+    to {background-color: transparent;}
+}
+
+@keyframes to-black-color {
+    from {color: white;}
+    to {color: #333;}
+}
+
+@keyframes to-white-color {
+    from {color: #333;}
+    to {color: white;}
+}
+
+#top-menu {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  display: inline-block;
+  background: transparent;
+  box-shadow: none;
+  animation-name: to-transparent-background;
+  animation-duration: 0.8s;
+}
+
+#top-menu a {
+  color: white;
+  animation-name: to-white-color;
+  animation-duration: 1s;
+}
+
+#top-menu.nav-white {
+  background: white !important;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 12px 0px;
+  transition: box-shadow 0.8s ease-in-out 0.2s;
+  animation-name: to-white-background;
+  animation-duration: 0.8s;
+}
+
+#top-menu.nav-white a {
+  color: #333;
+  animation-name: to-black-color;
+  animation-duration: 1s;
+}
+
+
+#index-banner {
+  height: 100vh;
+  position: relative;
+  text-align: center
+}
+
+#quem-somos p {
+  text-align: justify;
+}
+
+#quem-somos img {
+  width: 100%;
+  height: 100%;
+}
+
+#empreenda p {
+  text-align: justify;
+}
+
+#empreenda .card-panel {
+  height: 100px;
+}
+
+#porque .card {
+  height: 300px;
+}
+
+
+.dados {
+  background: #009688;
+  color: #FFF;
+  text-align: center;
+  padding: 50px 50px 0 50px;
+  
+}
+
+.dados .col {
+  padding-bottom: 50px;
+}
+
+.dados .numero {
+  font-size: 60px;
+}
+
+#eco-city {
+  text-align: justify;
+}
+
+
+.active {
+  background: rgba(0, 0, 0, 0.1);
+}
