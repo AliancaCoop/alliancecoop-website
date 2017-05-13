@@ -117,6 +117,7 @@ video {
   box-shadow: none;
   animation-name: to-transparent-background;
   animation-duration: 0.8s;
+  z-index: 1000;
 }
 
 #top-menu a {
@@ -124,6 +125,7 @@ video {
   animation-name: to-white-color;
   animation-duration: 1s;
 }
+
 
 #top-menu.nav-white {
   background: white !important;
